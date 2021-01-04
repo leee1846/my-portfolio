@@ -1,0 +1,190 @@
+$fontcolor-black: #404040;
+
+body {
+  font-family: "윤고딕";
+  color: $fontcolor-black;
+  .total-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    .cartoon-introduction {
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50px;
+        height: 100px;
+      }
+      .cartoon-pictures {
+        margin: 0 15px;
+        top: 0;
+        position: sticky;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .invisible-cartoon {
+          list-style: none;
+          position: absolute;
+          opacity: 1;
+          width: 100%;
+          transition: 0.3s;
+          img {
+            width: 100%;
+          }
+        }
+        .visible-cartoon {
+          opacity: 1;
+        }
+      }
+      .cartoon-contents {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .cartoon-content {
+          margin: 0 30px;
+          margin-bottom: 70vh;
+          max-width: 500px;
+          background-color: rgba(255, 255, 255, 0.733);
+          padding: 15px 10px;
+          border-radius: 10px;
+          p {
+            font-size: 0.7rem;
+            font-weight: 300;
+            line-height: 0.9rem;
+          }
+        }
+      }
+    }
+    .cover-letter {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+      .cover-letter-left {
+        width: 30%;
+        position: sticky;
+        top: 20%;
+        height: 50vh;
+        .my-picture {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .cover-letter-right {
+        width: 40%;
+        .cover-letter-contents {
+          .cover-letter-content {
+            position: sticky;
+            top: 20%;
+            height: 50vh;
+            background-color: white;
+            h2 {
+              font-size: 1.3rem;
+              font-weight: 500;
+              margin: 20px 0;
+            }
+            p {
+              font-size: 0.75rem;
+              line-height: 22px;
+            }
+            .greeting {
+              font-size: 1.2rem;
+              font-weight: 700;
+              margin-bottom: 30px;
+            }
+            .contact-lists {
+              .contact-list {
+                display: flex;
+                align-items: center;
+                margin: 25px 0;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover {
+                  color: dodgerblue;
+                }
+                i {
+                  font-size: 0.8rem;
+                  margin-right: 20px;
+                }
+                a {
+                  text-decoration: none;
+                  color: $fontcolor-black;
+                  font-size: 0.8rem;
+                  transition: 0.2s;
+                  &:hover {
+                    color: dodgerblue;
+                  }
+                }
+                .name {
+                  font-size: 0.8rem;
+                  letter-spacing: 10px;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .projects-container {
+      border-top: 1px solid $fontcolor-black;
+      margin: 10px 40px 0 40px;
+      .project-lists {
+        h4 {
+          color: dodgerblue;
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-top: 50px;
+        }
+        .project-list {
+          margin: 100px 0;
+          h5 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: rgb(93, 93, 93);
+          }
+          .project-content {
+            font-size: 0.7rem;
+            line-height: 20px;
+            margin-bottom: 30px;
+            color: rgb(93, 93, 93);
+          }
+          .tech {
+            padding: 0 20px;
+            font-size: 0.7rem;
+            color: rgb(93, 93, 93);
+          }
+          .tech-list {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            margin-bottom: 30px;
+            li {
+              width: 30px;
+              margin: 0 10px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          a {
+            color: rgb(93, 93, 93);
+            transition: 0.2s;
+            &:hover {
+              color: dodgerblue;
+            }
+            i {
+              font-size: 1rem;
+              margin-right: 5px;
+            }
+            span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
