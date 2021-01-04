@@ -37,7 +37,7 @@ body .total-container .cartoon-introduction .cartoon-pictures {
 body .total-container .cartoon-introduction .cartoon-pictures .invisible-cartoon {
   list-style: none;
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;

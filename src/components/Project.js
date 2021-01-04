@@ -11,9 +11,17 @@ import illust from "../images/illust.png";
 function Project() {
   const ProjectDatas = [
     {
-      title: "현재 포트폴리오 페이지",
+      title: "현재 포트폴리오 페이지 1",
       content:
-        "CRUD 시스템의 가장 기본적인 투두리스트입니다. vanilla   Javascript부터모듈시스템, webpack, react(typescript)를 브런치별로 나눠서 제작하였으며, 깃허브에서 단계별로 코드체크가 가능합니다.",
+        "현재 포트폴리오 페이지를 순수 자바스크립트와 webpack을 이용하여 구성해보았습니다. 하단 링크를 클릭하시면 github에서 코드확인이 가능합니다.",
+      techs: [javascript, scss, webpack],
+      link: "https://github.com/leee1846/portfolio",
+      iconName: "fab fa-github",
+    },
+    {
+      title: "현재 포트폴리오 페이지 2",
+      content:
+        "현재 포트폴리오 페이지를 react.js를 이용하여 구성해보았습니다. 하단 링크를 클릭하시면 github에서 코드확인이 가능합니다.",
       techs: [scss, react],
       link: "https://github.com/leee1846/portfolio-react-version",
       iconName: "fab fa-github",
