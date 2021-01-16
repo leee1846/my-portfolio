@@ -1,15 +1,10 @@
-import "./App.css";
-import CartoonIntro from "./pages/CartoonIntro";
-import CoverLetter from "./pages/CoverLetter";
-import Projects from "./pages/Projects";
+import PageRouter from "./pages/PageRouter";
 
 function App() {
   return (
-    <div className='total-container'>
-      <CartoonIntro />
-      <CoverLetter />
-      <Projects />
-    </div>
+    <>
+      <PageRouter />
+    </>
   );
 }
 
