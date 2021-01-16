@@ -1,10 +1,11 @@
 import React from "react";
+import Cartoon from "../components/cartoon/Cartoon";
 
 function CartoonPage() {
   return (
-    <div>
-      <h1>카툰</h1>
-    </div>
+    <>
+      <Cartoon />
+    </>
   );
 }
 

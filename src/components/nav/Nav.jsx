@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import * as Styled from "./Nav.style";
 
 function Nav() {
   return (
-    <nav>
-      <Link to='/'>cartoon</Link>
-      <Link to='/about'>about</Link>
-      <Link to='/projects'>projects</Link>
-    </nav>
+    <Styled.Nav>
+      <Styled.Links to='/'>cartoon</Styled.Links>
+      <Styled.Links to='/about'>about</Styled.Links>
+      <Styled.Links to='/projects'>projects</Styled.Links>
+    </Styled.Nav>
   );
 }
 
