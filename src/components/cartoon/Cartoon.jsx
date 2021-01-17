@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import * as Styled from "./Cartoon.style";
 import image1 from "../../images/pic1.jpg";
 import image2 from "../../images/pic2.jpg";
@@ -8,21 +8,21 @@ const imageData = [
   {
     id: 1,
     pic: image1,
-    display: true,
+    display: "true",
     content:
       "하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루",
   },
   {
     id: 2,
     pic: image2,
-    display: false,
+    display: "",
     content:
       "하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루",
   },
   {
     id: 3,
     pic: image3,
-    display: false,
+    display: "",
     content:
       "하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루하이루",
   },
@@ -31,43 +31,44 @@ const imageData = [
 function Cartoon() {
   const contentElem = useRef([]);
   const imageElem = useRef([]);
+  const [dataList, setDataList] = useState(imageData);
+
+  const dataMap = dataList.map((data) => {
+    return (
+      <Fragment key={data.id}>
+        <Styled.PicContainer>
+          <Styled.Image
+            src={data.pic}
+            display={data.display}
+            ref={(ref) => imageElem.current.push(ref)}
+          ></Styled.Image>
+        </Styled.PicContainer>
+        <Styled.ContentContainer>
+          <Styled.Content ref={(ref) => contentElem.current.push(ref)}>
+            <p>{data.content}</p>
+          </Styled.Content>
+        </Styled.ContentContainer>
+      </Fragment>
+    );
+  });
 
   window.addEventListener("scroll", () => {
-    contentElem.current.forEach((image, idx) => {
-      const boundingRect = image.getBoundingClientRect();
+    contentElem.current.forEach((content, idx) => {
+      const boundingRect = content.getBoundingClientRect();
+
       if (
         boundingRect.top < window.innerHeight * 0.5 &&
         boundingRect.top > window.innerHeight * 0.4
       ) {
-        // imageElem[idx];
+        // setDataList((dataList) => (dataList[idx].display = ""));
+        // setDataList(dataList);
       }
     });
   });
 
   return (
     <>
-      <Styled.Section>
-        <Styled.PicContainer>
-          {imageData.map((data) => (
-            <Styled.Image
-              key={data.id}
-              src={data.pic}
-              display={data.display}
-              ref={(ref) => imageElem.current.push(ref)}
-            ></Styled.Image>
-          ))}
-        </Styled.PicContainer>
-        <Styled.ContentContainer>
-          {imageData.map((data) => (
-            <Styled.Content
-              key={data.id}
-              ref={(ref) => contentElem.current.push(ref)}
-            >
-              <p>{data.content}</p>
-            </Styled.Content>
-          ))}
-        </Styled.ContentContainer>
-      </Styled.Section>
+      <Styled.Section>{dataMap}</Styled.Section>
     </>
   );
 }

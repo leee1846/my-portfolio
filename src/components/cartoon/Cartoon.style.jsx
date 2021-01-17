@@ -38,7 +38,7 @@ export const ContentContainer = Styled.div`
 export const Content = Styled.div`
   width:400px;
   background-color:rgba(255, 255, 255, 0.57);
-  margin:35vh 0;
+  margin-bottom:30vh;
   padding:10px 15px;
   border-radius:10px;
 
