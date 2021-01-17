@@ -4,7 +4,7 @@ import image from "../../images/image.jpg";
 export const Container = Styled.section`
   max-width:1200px;
   margin:60px auto;
-  padding:0 20px;
+  padding:0 30px;
   display:flex;
   flex-direction:column;
   color:#383838;
@@ -14,7 +14,7 @@ export const Top = Styled.div`
   display:flex;
   justify-content:space-between;
   width:100%;
-  margin-bottom:12vh;
+  margin-bottom:9vh;
   h1 {
     flex:1;
     font-weight:bold;

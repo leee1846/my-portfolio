@@ -5,7 +5,7 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 
 export const Nav = Styled.nav`
-  padding:5px 20px;
+  padding:5px 30px;
   box-shadow:0 1px 3px #ececec;
   position:sticky;
   top:0;
