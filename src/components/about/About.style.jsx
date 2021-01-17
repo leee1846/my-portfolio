@@ -73,7 +73,7 @@ export const Address = Styled.a`
     content:'';
     height:1px;
     width:0;
-    background-color:#72bad6;
+    background-color:#ffffff;
     transition:.4s linear;
   }
   &:hover {

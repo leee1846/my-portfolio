@@ -63,7 +63,7 @@ export const Github = Styled.a`
     content:'';
     height:1px;
     width:0;
-    background-color:#72bad6;
+    background-color:#fbfbfb;
     transition:.5s linear;
   }
   &:hover:after {
