@@ -15,7 +15,7 @@ export const Project = Styled.div`
 
 export const ImageBox = Styled.div`
   max-width:40vw;
-  height:40vh;
+  max-height:250px;
   margin-bottom:10px;
   overflow:hidden;
   display:flex;
@@ -40,18 +40,35 @@ export const Title = Styled.h2`
 `;
 
 export const Content = Styled.p`
-  font-size:.58rem;
+  font-size:.55rem;
   width:70%;
   font-weight:100;
+  line-height:.7rem;
   ul {
     margin-top:5px;
-    font-size:.53rem;
+    font-size:.52rem;
   }
 `;
 
 export const Github = Styled.a`
-  font-size:.51rem;
+  font-size:.5rem;
   color:#383838;
+  text-decoration:none;
+  border-bottom:.5px solid gray;
+  position:relative;
+  &:after {
+    position:absolute;
+    bottom:-1px;
+    left:0;
+    content:'';
+    height:1px;
+    width:0;
+    background-color:#72bad6;
+    transition:.5s linear;
+  }
+  &:hover:after {
+    width:100%;
+  }
   &:hover {
     color:black;
   }

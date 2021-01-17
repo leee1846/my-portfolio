@@ -3,6 +3,7 @@ import * as Styled from "./Project.style";
 import todo from "../../images/todo.jpg";
 import design1 from "../../images/design1.jpg";
 import design2 from "../../images/design2.jpg";
+import portfolio from "../../images/portfolio.jpg";
 
 const projectData = [
   {
@@ -22,6 +23,16 @@ const projectData = [
   },
   {
     id: 2,
+    image: portfolio,
+    title: "portfolio",
+    content:
+      '포트폴리오 싸이트를 직접 제작해 보았습니다. React,js를 사용하여 구현하였으며, "my story", "about me", "project" 섹션으로 나뉘어 저의 소개를 해보았습니다. SPA을 구현하기 위하여 react-router-dom을 사용하였으며, styled-components로 스타일을 구현하였습니다. "portfolio"브랜치로 확인 부탁드립니다.',
+    concept: ["-React.js", "-styled-components"],
+    githubUrl: "https://github.com/leee1846/portfolio-react",
+    githubContent: "github.com/leee1846/portfolio-react",
+  },
+  {
+    id: 3,
     image: design1,
     title: "경기도 슬로건 디자인 공모전",
     content:
@@ -32,7 +43,7 @@ const projectData = [
     githubContent: "velog.io/@kyungjune",
   },
   {
-    id: 3,
+    id: 4,
     image: design2,
     title: "경기도 슬로건 디자인 공모전",
     content:

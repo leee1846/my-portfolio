@@ -6,7 +6,10 @@ function About() {
   return (
     <Styled.Container>
       <Styled.Top>
-        <h1>주니어 개발자 이경준 입니다.</h1>
+        <h1>
+          안녕하십니까! 읽기 쉬운 코드작성을 추구하는 주니어 개발자 이경준
+          입니다.
+        </h1>
         <p>
           주니어 개발자 이경준 입니다.주니어 개발자 이경준 입니다.주니어 개발자
           이경준 입니다. 주니어 개발자 이경준 입니다.주니어 개발자 이경준
@@ -31,13 +34,19 @@ function About() {
           <li>이 경 준</li>
           <li>010 - 7689 - 1846</li>
           <li>
-            <a href='mailto:leee1846@gmail.com'>leee1846@gmail.com</a>
+            <Styled.Address href='mailto:leee1846@gmail.com'>
+              leee1846@gmail.com
+            </Styled.Address>
           </li>
           <li>
-            <a href='https://github.com/leee1846'>github.com/leee1846</a>
+            <Styled.Address href='https://github.com/leee1846'>
+              github.com/leee1846
+            </Styled.Address>
           </li>
           <li>
-            <a href='https://velog.io/@kyungjune'>velog.io/@kyungjune</a>
+            <Styled.Address href='https://velog.io/@kyungjune'>
+              velog.io/@kyungjune
+            </Styled.Address>
           </li>
         </Styled.Inform>
       </Styled.Bottom>

@@ -38,11 +38,11 @@ export const Pocket = Styled.span`
   position:absolute;
   top:35px;
   background-color:#363636;
-  font-size:.5rem;
+  font-size:5px;
   color:#f0f0f0;
   border-radius:5px;
   box-shadow:-1px 1px 3px gray;
-  padding:5px;
+  padding:5px 7px;
   transition:.1s linear;
   opacity:0;
 `;
@@ -74,8 +74,8 @@ export const Links = Styled(Link)`
   cursor:pointer;
   background-color:#e9e9e9;
   border-radius:50%;
-  width:30px;
-  height:30px;
+  width:27px;
+  height:27px;
   display:flex;
   justify-content:center;
   align-items:center;

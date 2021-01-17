@@ -18,6 +18,8 @@ export const Top = Styled.div`
   h1 {
     flex:1;
     font-weight:bold;
+    font-size:.9rem;
+    line-height:1rem;
   }
   p {
     flex:1;
@@ -45,22 +47,39 @@ export const Inform = Styled.ul`
   margin-left:10vh;
 
   p {
-    font-size:.57rem;
-    margin-bottom:3vh;
+    font-size:.55rem;
+    margin-bottom:4vh;
     line-height:.8rem;
+    font-weight:medium;
   }
 
   li {
-    font-size:.57rem;
+    font-size:.53rem;
     font-weight:100;
-    margin-bottom:5px;
-    a {
-      color:#383838;
-      text-decoration:none;
-      border-bottom:.5px solid gray;
-      &:hover {
-        color:black;
-      }
-    }
+    margin-bottom:7px;
+  }
+`;
+
+export const Address = Styled.a`
+  color:#383838;
+  text-decoration:none;
+  border-bottom:.5px solid gray;
+  position:relative;
+
+  &:after {
+    position:absolute;
+    bottom:-1px;
+    left:0;
+    content:'';
+    height:1px;
+    width:0;
+    background-color:#72bad6;
+    transition:.4s linear;
+  }
+  &:hover {
+    color:black;
+  }
+  &:hover:after {
+    width:100%;
   }
 `;
