@@ -5,19 +5,33 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 
 export const Nav = Styled.nav`
-  padding:5px 0;
+  padding:5px 20px;
   box-shadow:0 1px 3px #ececec;
   position:sticky;
   top:0;
   z-index:10000;
+  background-color:rgba(255, 255, 255, 0.931);
   `;
 
 export const NavBox = Styled.div`
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+`;
+
+export const Logo = Styled(Link)`
+  text-decoration:none;
+  cursor:pointer;
+  font-size:.6rem;
+  color:#383838;
+`;
+
+export const NavRight = Styled.div`
   display:flex;
   justify-content:flex-end;
   align-items:center;
-  max-width:1200px;
-  margin:0 auto;
 `;
 
 export const Pocket = Styled.span`

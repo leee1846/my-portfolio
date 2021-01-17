@@ -1,10 +1,11 @@
 import React from "react";
+import About from "./../components/about/About";
 
 function AboutPage() {
   return (
-    <div>
-      <h1>어바웃페이지</h1>
-    </div>
+    <>
+      <About />
+    </>
   );
 }
 
