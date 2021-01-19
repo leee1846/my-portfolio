@@ -3,9 +3,9 @@ import Project from "./../components/project/Project";
 
 function ProjectsPage() {
   return (
-    <div>
+    <>
       <Project />
-    </div>
+    </>
   );
 }
 
