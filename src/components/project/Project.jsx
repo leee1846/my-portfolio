@@ -69,8 +69,8 @@ function Project() {
               <Styled.Content>
                 {project.content}
                 <ul>
-                  {project.concept.map((list) => (
-                    <li>{list}</li>
+                  {project.concept.map((list, idx) => (
+                    <li key={idx}>{list}</li>
                   ))}
                 </ul>
               </Styled.Content>
