@@ -1,11 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import * as Styled from "./CartoonContent.style";
 import { useDispatch } from "react-redux";
 import { slider } from "../../store/cartoonReducer";
 
-function CartoonContent({ content }) {
+function CartoonContent({ content, index }) {
   const contentRef = useRef();
   const boundingRef = useRef();
+  const [contentIndex, setContentIndex] = useState(index);
 
   const dispatch = useDispatch();
 
@@ -23,10 +24,10 @@ function CartoonContent({ content }) {
   const imageScrollHandeler = throttle(() => {
     boundingRef.current = contentRef.current.getBoundingClientRect();
     if (
-      boundingRef.current.top < window.innerHeight * 0.7 &&
-      boundingRef.current.top > window.innerHeight * 0.6
+      boundingRef.current.top < window.innerHeight * 0.5 &&
+      boundingRef.current.top > window.innerHeight * 0.4
     ) {
-      dispatch(slider({ id: 3 }));
+      dispatch(slider({ id: contentIndex + 1 }));
     }
   }, 100);
 

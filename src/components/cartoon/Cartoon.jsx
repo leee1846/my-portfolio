@@ -20,13 +20,14 @@ function Cartoon() {
           ))}
         </Styled.ImageContainer>
         <Styled.ContentContainer>
-          {cartoonReducer.map((data) => {
+          {cartoonReducer.map((data, index) => {
             return (
               <CartoonContent
                 key={data.id}
                 content={data.content}
                 displayImage={data.displayImage}
                 cartoonReducer={cartoonReducer}
+                index={index}
               />
             );
           })}

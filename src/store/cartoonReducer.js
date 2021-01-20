@@ -33,7 +33,9 @@ const cartoonReduce = createSlice({
   reducers: {
     slider: (state, { payload }) =>
       state.map((list) =>
-        list.id === payload.id ? { ...list, displayImage: true } : { ...list }
+        list.id === payload.id
+          ? { ...list, displayImage: true }
+          : { ...list, displayImage: false }
       ),
   },
 });
