@@ -1,5 +1,4 @@
 import Styled from "styled-components";
-import image from "../../images/image.jpg";
 
 export const Container = Styled.section`
   max-width:1200px;

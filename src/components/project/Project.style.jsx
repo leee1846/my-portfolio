@@ -14,8 +14,8 @@ export const Project = Styled.div`
 `;
 
 export const ImageBox = Styled.div`
-  max-width:40vw;
-  max-height:250px;
+  max-width:45vw;
+  max-height:500px;
   margin-bottom:10px;
   overflow:hidden;
   display:flex;

@@ -6,8 +6,8 @@ export const PicContainer = Styled.li`
   width: 70vw;
   transition: 0.3s;
 
-  ${({ display }) =>
-    !display &&
+  ${({ displayImage }) =>
+    !displayImage &&
     css`
       opacity: 0;
     `}

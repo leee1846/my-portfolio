@@ -1,9 +1,7 @@
-import Styled, { css } from "styled-components";
+import Styled from "styled-components";
 
 export const Section = Styled.section`
   width:100%;
-  /* height:100vh;
-  position:relative; */
   `;
 
 export const ImageContainer = Styled.ul`

@@ -1,30 +1,41 @@
 import React, { useRef, useEffect } from "react";
 import * as Styled from "./CartoonContent.style";
+import { useDispatch } from "react-redux";
+import { slider } from "../../store/cartoonReducer";
 
-function CartoonContent({ display, content }) {
-  // let timer = null;
+function CartoonContent({ content }) {
   const contentRef = useRef();
+  const boundingRef = useRef();
 
-  // const imageDisplayHandeler = () => {
-  //   setDataList((dataList) =>
-  //     dataList.map((list) => {
-  //       return { ...list, display: false };
-  //     })
-  //   );
-  // };
+  const dispatch = useDispatch();
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const boundingRect = contentRef.current.getBoundingClientRect();
-      if (
-        boundingRect.top < window.innerHeight * 0.7 &&
-        boundingRect.top > window.innerHeight * 0.6
-      ) {
-        // display = true;
-        console.log(display);
-      }
-    });
-  });
+  let timer = null;
+
+  const throttle = (func, time) => (...args) => {
+    if (!timer) {
+      timer = setTimeout(() => {
+        timer = null;
+        func(...args);
+      }, time);
+    }
+  };
+
+  const imageScrollHandeler = throttle(() => {
+    boundingRef.current = contentRef.current.getBoundingClientRect();
+    if (
+      boundingRef.current.top < window.innerHeight * 0.7 &&
+      boundingRef.current.top > window.innerHeight * 0.6
+    ) {
+      dispatch(slider({ id: 3 }));
+    }
+  }, 100);
+
+  useEffect(function () {
+    window.addEventListener("scroll", imageScrollHandeler);
+    return () => {
+      window.removeEventListener("scroll", imageScrollHandeler);
+    };
+  }, []);
 
   return (
     <>

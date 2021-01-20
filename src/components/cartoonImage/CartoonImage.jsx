@@ -1,12 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import * as Styled from "./CartoonImage.style";
 
-function CartoonImage({ image, display }) {
-  const imageRef = useRef();
-
+function CartoonImage({ image, displayImage }) {
   return (
     <>
-      <Styled.PicContainer ref={imageRef} display={display}>
+      <Styled.PicContainer displayImage={displayImage}>
         <Styled.Image src={image}></Styled.Image>
       </Styled.PicContainer>
     </>
