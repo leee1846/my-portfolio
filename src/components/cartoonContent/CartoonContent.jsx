@@ -29,9 +29,9 @@ function CartoonContent({ content, index }) {
     ) {
       dispatch(slider({ id: contentIndex + 1 }));
     }
-  }, 100);
+  }, 0);
 
-  useEffect(function () {
+  useEffect(() => {
     window.addEventListener("scroll", imageScrollHandeler);
     return () => {
       window.removeEventListener("scroll", imageScrollHandeler);

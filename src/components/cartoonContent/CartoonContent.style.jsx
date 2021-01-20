@@ -1,9 +1,10 @@
 import Styled from "styled-components";
 
 export const ContentContainer = Styled.li`
-  margin: 0 30px;
+  margin: 0 110px;
   margin-bottom: 70vh;
   max-width: 500px;
+  /* background-color: gray; */
   background-color: rgba(255, 255, 255, 0.733);
   padding: 20px 15px;
   border-radius: 10px;
