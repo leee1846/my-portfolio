@@ -11,10 +11,11 @@ export const Nav = Styled.nav`
   top:0;
   z-index:10000;
   background-color:rgba(255, 255, 255, 0.931);
+  margin:0 auto;
   `;
 
 export const NavBox = Styled.div`
-  max-width:1200px;
+  max-width:1080px;
   margin:0 auto;
   display:flex;
   justify-content:space-between;

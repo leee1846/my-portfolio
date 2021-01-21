@@ -1,7 +1,6 @@
 import Styled from "styled-components";
 
 export const Container = Styled.section`
-  max-width:1200px;
   margin:60px auto;
   padding:0 30px;
   display:flex;
@@ -16,15 +15,16 @@ export const Top = Styled.div`
   margin-bottom:9vh;
   h1 {
     flex:1;
-    font-weight:bold;
-    font-size:.9rem;
-    line-height:1.2rem;
+    font-weight:900;
+    font-size:14px;
+    line-height:1.1rem;
   }
   p {
     flex:1;
-    font-size:.65rem;
+    font-size:11px;
     line-height:.9rem;
     margin-left:10vh;
+    font-weight:500;
   }
 `;
 
@@ -46,14 +46,14 @@ export const Inform = Styled.ul`
   margin-left:10vh;
 
   p {
-    font-size:.55rem;
+    font-size:8px;
     margin-bottom:4vh;
     line-height:.9rem;
-    font-weight:medium;
+    font-weight:100;
   }
 
   li {
-    font-size:.53rem;
+    font-size:8px;
     font-weight:100;
     margin-bottom:7px;
   }

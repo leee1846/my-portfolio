@@ -25,6 +25,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font-family:'NanumGothic';
 	vertical-align: baseline;
+	box-sizing:border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
