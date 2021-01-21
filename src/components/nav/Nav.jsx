@@ -8,16 +8,22 @@ function Nav() {
         <Styled.Logo to='/'>kyungjunelee</Styled.Logo>
         <Styled.NavRight>
           <Styled.Links to='/'>
-            <Styled.Cartoons />
-            <Styled.Pocket>My story</Styled.Pocket>
+            <Styled.IconBox>
+              <Styled.Cartoons />
+              <Styled.Pocket>My story</Styled.Pocket>
+            </Styled.IconBox>
           </Styled.Links>
           <Styled.Links to='/about'>
-            <Styled.About />
-            <Styled.Pocket>About me</Styled.Pocket>
+            <Styled.IconBox>
+              <Styled.About />
+              <Styled.Pocket>About me</Styled.Pocket>
+            </Styled.IconBox>
           </Styled.Links>
           <Styled.Links to='/projects'>
-            <Styled.Project />
-            <Styled.Pocket>Projects</Styled.Pocket>
+            <Styled.IconBox>
+              <Styled.Project />
+              <Styled.Pocket>Projects</Styled.Pocket>
+            </Styled.IconBox>
           </Styled.Links>
         </Styled.NavRight>
       </Styled.NavBox>

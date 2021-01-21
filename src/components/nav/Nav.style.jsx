@@ -50,9 +50,6 @@ export const Pocket = Styled.span`
 const navStyle = css`
   color: #141414;
   transform: scale(0.5);
-  &:hover ~ ${Pocket} {
-    opacity: 1;
-  }
 `;
 
 export const Cartoons = Styled(VideoLibraryIcon)`
@@ -71,16 +68,24 @@ export const Links = Styled(Link)`
   position:relative;
   text-decoration:none;
   margin: 0 5px;
+  `;
+
+export const IconBox = Styled.div`
+  position:relative;
+  width:30px;
+  height:30px;
   cursor:pointer;
   background-color:#e9e9e9;
   border-radius:50%;
   width:27px;
   height:27px;
-  display:flex;
+    display:flex;
   justify-content:center;
   align-items:center;
-  
   &:hover {
     background-color:#e2e2e2;
+  }
+  &:hover>${Pocket} {
+    opacity: 1;
   }
 `;

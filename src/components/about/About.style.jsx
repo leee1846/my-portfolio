@@ -18,12 +18,12 @@ export const Top = Styled.div`
     flex:1;
     font-weight:bold;
     font-size:.9rem;
-    line-height:1rem;
+    line-height:1.2rem;
   }
   p {
     flex:1;
     font-size:.65rem;
-    line-height:.8rem;
+    line-height:.9rem;
     margin-left:10vh;
   }
 `;
@@ -48,7 +48,7 @@ export const Inform = Styled.ul`
   p {
     font-size:.55rem;
     margin-bottom:4vh;
-    line-height:.8rem;
+    line-height:.9rem;
     font-weight:medium;
   }
 
