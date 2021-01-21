@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
+import NanumGothic from "../fonts/Nanum_Gothic/NanumGothic-Regular.ttf";
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+	font-family: 'NanumGothic';
+	src: url(${NanumGothic});
+}
   html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +23,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family:'NanumGothic';
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
