@@ -14,8 +14,8 @@ export const Nav = Styled.nav`
   `;
 
 export const NavBox = Styled.div`
-  padding:10px 30px;
-  max-width:1200px;
+  padding:15px 55px;
+  max-width:1900px;
   margin:0 auto;
   display:flex;
   justify-content:space-between;
@@ -25,7 +25,7 @@ export const NavBox = Styled.div`
 export const Logo = Styled(Link)`
   text-decoration:none;
   cursor:pointer;
-  font-size:20px;
+  font-size:22px;
   color:#1d1d1d;
   font-weight:500;
 `;
@@ -51,7 +51,7 @@ export const Pocket = Styled.span`
 
 const navStyle = css`
   color: #141414;
-  transform: scale(0.6);
+  transform: scale(0.7);
 `;
 
 export const Cartoons = Styled(VideoLibraryIcon)`
@@ -74,8 +74,8 @@ export const Links = Styled(Link)`
 
 export const IconBox = Styled.div`
   position:relative;
-  width:36px;
-  height:36px;
+  width:40px;
+  height:40px;
   cursor:pointer;
   background-color:#e9e9e9;
   border-radius:50%;
