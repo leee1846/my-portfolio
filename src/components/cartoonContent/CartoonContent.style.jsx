@@ -11,7 +11,7 @@ export const ContentContainer = Styled.li`
 `;
 
 export const Content = Styled.p`
-  font-size: 0.7rem;
+  font-size: 16px;
   font-weight: 300;
   line-height: 0.9rem;
 `;

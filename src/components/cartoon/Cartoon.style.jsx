@@ -5,10 +5,11 @@ export const Section = Styled.section`
   `;
 
 export const ImageContainer = Styled.ul`
-  margin: 0 15px;
+  margin: 0 auto;
   top: 0;
   position: sticky;
   height: 100vh;
+  max-width:100%;
   display: flex;
   justify-content: center;
   align-items: center;

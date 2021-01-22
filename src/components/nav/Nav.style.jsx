@@ -5,7 +5,6 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 
 export const Nav = Styled.nav`
-  padding:5px 30px;
   box-shadow:0 1px 3px #ececec;
   position:sticky;
   top:0;
@@ -15,7 +14,8 @@ export const Nav = Styled.nav`
   `;
 
 export const NavBox = Styled.div`
-  max-width:1080px;
+  padding:10px 30px;
+  max-width:1200px;
   margin:0 auto;
   display:flex;
   justify-content:space-between;
@@ -25,8 +25,9 @@ export const NavBox = Styled.div`
 export const Logo = Styled(Link)`
   text-decoration:none;
   cursor:pointer;
-  font-size:.6rem;
-  color:#383838;
+  font-size:20px;
+  color:#1d1d1d;
+  font-weight:500;
 `;
 
 export const NavRight = Styled.div`
@@ -37,20 +38,20 @@ export const NavRight = Styled.div`
 
 export const Pocket = Styled.span`
   position:absolute;
-  top:35px;
+  top:47px;
   background-color:#363636;
-  font-size:5px;
+  font-size:14px;
   color:#f0f0f0;
-  border-radius:5px;
+  border-radius:8px;
   box-shadow:-1px 1px 3px gray;
-  padding:5px 7px;
+  padding:7px 10px;
   transition:.1s linear;
   opacity:0;
 `;
 
 const navStyle = css`
   color: #141414;
-  transform: scale(0.5);
+  transform: scale(0.6);
 `;
 
 export const Cartoons = Styled(VideoLibraryIcon)`
@@ -73,13 +74,11 @@ export const Links = Styled(Link)`
 
 export const IconBox = Styled.div`
   position:relative;
-  width:30px;
-  height:30px;
+  width:36px;
+  height:36px;
   cursor:pointer;
   background-color:#e9e9e9;
   border-radius:50%;
-  width:27px;
-  height:27px;
     display:flex;
   justify-content:center;
   align-items:center;

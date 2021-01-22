@@ -1,11 +1,10 @@
 import Styled from "styled-components";
 
 export const Container = Styled.section`
-  margin:60px auto;
+  margin:80px auto;
   padding:0 30px;
   display:flex;
   flex-direction:column;
-  color:#383838;
 `;
 
 export const Top = Styled.div`
@@ -16,13 +15,13 @@ export const Top = Styled.div`
   h1 {
     flex:1;
     font-weight:900;
-    font-size:14px;
-    line-height:1.1rem;
+    font-size:26px;
+    line-height:34px;
   }
   p {
     flex:1;
-    font-size:11px;
-    line-height:.9rem;
+    font-size:18px;
+    line-height:28px;
     margin-left:10vh;
     font-weight:500;
   }
@@ -46,23 +45,23 @@ export const Inform = Styled.ul`
   margin-left:10vh;
 
   p {
-    font-size:8px;
+    font-size:14px;
     margin-bottom:4vh;
-    line-height:.9rem;
+    line-height:26px;
     font-weight:100;
   }
 
   li {
-    font-size:8px;
+    font-size:14px;
     font-weight:100;
-    margin-bottom:7px;
+    margin-bottom:10px;
   }
 `;
 
 export const Address = Styled.a`
   color:#383838;
   text-decoration:none;
-  border-bottom:.5px solid gray;
+  border-bottom:.5px solid #1d1d1d;
   position:relative;
 
   &:after {
@@ -76,7 +75,7 @@ export const Address = Styled.a`
     transition:.4s linear;
   }
   &:hover {
-    color:black;
+    color:#929292;
   }
   &:hover:after {
     width:100%;

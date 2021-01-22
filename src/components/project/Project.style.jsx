@@ -3,8 +3,6 @@ import Styled from "styled-components";
 export const Container = Styled.section`
   max-width:1200px;
   margin:40px auto;
-  padding:0 30px;
-  color:#383838;
 `;
 
 export const Project = Styled.div`
@@ -35,26 +33,27 @@ export const Img = Styled.img`
 `;
 
 export const Title = Styled.h2`
-  font-size:.75rem;
+  font-size:22px;
   margin-bottom:10px;
 `;
 
 export const Content = Styled.p`
-  font-size:.55rem;
+  font-size:15px;
   width:70%;
   font-weight:100;
-  line-height:.7rem;
+  line-height:21px;
   ul {
-    margin-top:5px;
-    font-size:.52rem;
+    margin-top:8px;
+    margin-bottom:2px;
+    font-size:14px;
   }
 `;
 
 export const Github = Styled.a`
-  font-size:.5rem;
-  color:#383838;
+  font-size:14px;
+  color:#1d1d1d;
   text-decoration:none;
-  border-bottom:.5px solid gray;
+  border-bottom:.5px solid #1d1d1d;
   position:relative;
   &:after {
     position:absolute;
@@ -70,6 +69,6 @@ export const Github = Styled.a`
     width:100%;
   }
   &:hover {
-    color:black;
+    color:#929292;
   }
 `;

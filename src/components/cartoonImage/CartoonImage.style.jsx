@@ -3,8 +3,11 @@ import Styled, { css } from "styled-components";
 export const PicContainer = Styled.li`
   position: absolute;
   opacity: 1;
-  width: 70vw;
-  transition: 0.3s;
+  width:100%;
+  transition: 0.3s linear;
+  display:Flex;
+  justify-content:center;
+  align-items:center;
 
   ${({ displayImage }) =>
     !displayImage &&
@@ -14,5 +17,7 @@ export const PicContainer = Styled.li`
   `;
 
 export const Image = Styled.img`
-  width: 100%;
+  width:100%;
+  max-height:80vh;
+  object-fit:cover;
 `;
