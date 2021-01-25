@@ -26,7 +26,7 @@ export const Img = Styled.img`
   transition:.2s linear;
 
   &:hover {
-    width:105%;
+    transform:scale(1.1)
   }
 `;
 
