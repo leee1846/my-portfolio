@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/my-portfolio/static/js/main.6de08bb6.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.6de08bb6.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.57030a5b.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.57030a5b.js.map",
+    "static/js/2.baaaf984.chunk.js": "/my-portfolio/static/js/2.baaaf984.chunk.js",
+    "static/js/2.baaaf984.chunk.js.map": "/my-portfolio/static/js/2.baaaf984.chunk.js.map",
+    "static/js/3.bc0b9e48.chunk.js": "/my-portfolio/static/js/3.bc0b9e48.chunk.js",
+    "static/js/3.bc0b9e48.chunk.js.map": "/my-portfolio/static/js/3.bc0b9e48.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "static/js/2.baaaf984.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.baaaf984.chunk.js.LICENSE.txt",
+    "static/media/NanumGothic-Regular.6c84540d.ttf": "/my-portfolio/static/media/NanumGothic-Regular.6c84540d.ttf",
+    "static/media/design1.c12d09a9.jpg": "/my-portfolio/static/media/design1.c12d09a9.jpg",
+    "static/media/design2.ce875478.jpg": "/my-portfolio/static/media/design2.ce875478.jpg",
+    "static/media/image.b011d3cc.jpg": "/my-portfolio/static/media/image.b011d3cc.jpg",
+    "static/media/pic1.56392146.jpg": "/my-portfolio/static/media/pic1.56392146.jpg",
+    "static/media/pic2.d1109620.jpg": "/my-portfolio/static/media/pic2.d1109620.jpg",
+    "static/media/pic3.8c3399f4.jpg": "/my-portfolio/static/media/pic3.8c3399f4.jpg",
+    "static/media/portfolio.d1ed9a4a.jpg": "/my-portfolio/static/media/portfolio.d1ed9a4a.jpg",
+    "static/media/todo.c2619f24.jpg": "/my-portfolio/static/media/todo.c2619f24.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57030a5b.js",
+    "static/js/2.baaaf984.chunk.js",
+    "static/js/main.6de08bb6.chunk.js"
+  ]
+}
