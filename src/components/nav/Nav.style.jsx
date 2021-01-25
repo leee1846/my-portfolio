@@ -20,6 +20,9 @@ export const NavBox = Styled.div`
   display:flex;
   justify-content:space-between;
   align-items:center;
+  @media (max-width:767px){
+    padding:10px 20px;
+  }
 `;
 
 export const Logo = Styled(Link)`
@@ -28,6 +31,10 @@ export const Logo = Styled(Link)`
   font-size:22px;
   color:#1d1d1d;
   font-weight:500;
+
+  @media (max-width:767px){
+    font-size:18px;
+  }
 `;
 
 export const NavRight = Styled.div`

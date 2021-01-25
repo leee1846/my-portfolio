@@ -45,6 +45,10 @@ export const Content = Styled.p`
     margin-bottom:2px;
     font-size:14px;
   }
+  @media (max-width:767px){
+    width:90%;
+    
+  }
 `;
 
 export const Github = Styled.a`
