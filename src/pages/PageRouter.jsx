@@ -8,7 +8,7 @@ import * as Styled from "../style/Output";
 
 function PageRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Nav />
       <Styled.Container>
         <Switch>
