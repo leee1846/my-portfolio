@@ -5,9 +5,9 @@ function Nav() {
   return (
     <Styled.Nav>
       <Styled.NavBox>
-        <Styled.Logo to='/about'>kyungjunelee</Styled.Logo>
+        <Styled.Logo to='/'>kyungjunelee</Styled.Logo>
         <Styled.NavRight>
-          <Styled.Links to='/about'>
+          <Styled.Links to='/'>
             {/* <Styled.IconBox>
               <Styled.Cartoons />
               <Styled.Pocket>My story</Styled.Pocket>

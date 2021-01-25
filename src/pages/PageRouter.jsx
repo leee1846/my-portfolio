@@ -12,7 +12,7 @@ function PageRouter() {
       <Nav />
       <Styled.Container>
         <Switch>
-          <Route exact path='/about' component={AboutPage} />
+          <Route exact path='/' component={AboutPage} />
           <Route path='/myStory' component={CartoonPage} />
           <Route path='/Projects' component={ProjectsPage} />
         </Switch>
