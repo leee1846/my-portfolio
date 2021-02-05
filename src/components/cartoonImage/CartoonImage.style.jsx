@@ -19,5 +19,5 @@ export const PicContainer = Styled.li`
 export const Image = Styled.img`
   width:100%;
   max-height:80vh;
-  object-fit:cover;
+  object-fit:contain;
 `;
