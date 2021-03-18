@@ -1,4 +1,6 @@
 <h1>포트폴리오</h1>
+<p>branch => portfolio</p>
+<p>사용 스택 => react.js, react-router-dom, styled-components, material-ui</p>
 <h1><a href="https://leee1846.github.io/my-portfolio/">https://leee1846.github.io/my-portfolio/</a></h1>
 <p>react.js와 styled-components를 주로 사용하여 포트폴리오를 제작하였습니다. 
   <b>코드는 branch "portfolio"</b>를 체크한 후 확인 바랍니다.</p>
