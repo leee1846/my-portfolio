@@ -1,41 +1,22 @@
 import * as Styled from "./Nav.style";
 import Link from "next/link";
+import { SvgIconProps } from "@material-ui/core/SvgIcon";
 
-const Nav = () => {
+type NavProps = {
+  href: string;
+  icon: SvgIconProps;
+};
+
+const Nav: React.FC<NavProps> = ({ children, href, icon }) => {
   return (
-    <Styled.Nav>
-      <Styled.NavBox>
-        <Link href='/about'>
-          <Styled.Logo>kyungjunelee</Styled.Logo>
-        </Link>
-        <Styled.NavRight>
-          <Link href='/about'>
-            <Styled.Links>
-              <Styled.IconBox>
-                <Styled.About />
-                <Styled.Pocket>About me</Styled.Pocket>
-              </Styled.IconBox>
-            </Styled.Links>
-          </Link>
-          <Link href='/myStory'>
-            <Styled.Links>
-              <Styled.IconBox>
-                <Styled.Cartoons />
-                <Styled.Pocket>My story</Styled.Pocket>
-              </Styled.IconBox>
-            </Styled.Links>
-          </Link>
-          <Link href='/projects'>
-            <Styled.Links>
-              <Styled.IconBox>
-                <Styled.Project />
-                <Styled.Pocket>Projects</Styled.Pocket>
-              </Styled.IconBox>
-            </Styled.Links>
-          </Link>
-        </Styled.NavRight>
-      </Styled.NavBox>
-    </Styled.Nav>
+    <Link href={href}>
+      <Styled.Links>
+        <Styled.IconBox>
+          <Styled.Icon icon={icon} />
+        </Styled.IconBox>
+        <Styled.Pocket>{children}</Styled.Pocket>
+      </Styled.Links>
+    </Link>
   );
 };
 

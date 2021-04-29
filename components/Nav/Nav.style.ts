@@ -1,44 +1,6 @@
-import Styled, { css } from "styled-components";
-import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";
-import EventNoteIcon from "@material-ui/icons/EventNote";
+import Styled from "styled-components";
 
-export const Nav = Styled.nav`
-  box-shadow:0 1px 3px #ececec;
-  position:sticky;
-  top:0;
-  z-index:10000;
-  background-color:rgba(255, 255, 255, 0.931);
-  margin:0 auto;
-  `;
-
-export const NavBox = Styled.div`
-  padding:15px 55px;
-  max-width:1900px;
-  margin:0 auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  @media (max-width:767px){
-    padding:10px 20px;
-  }
-`;
-
-export const Logo = Styled.a`
-  text-decoration:none;
-  cursor:pointer;
-  font-size:22px;
-  color:#1d1d1d;
-  font-weight:500;
-  @media (max-width:767px){
-    font-size:18px;
-  }
-`;
-
-export const NavRight = Styled.div`
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
+export const Icon = Styled(({ icon }) => icon)`
 `;
 
 export const Pocket = Styled.span`
@@ -52,23 +14,6 @@ export const Pocket = Styled.span`
   padding:7px 10px;
   transition:.1s linear;
   opacity:0;
-`;
-
-const navStyle = css`
-  color: #141414;
-  transform: scale(0.7);
-`;
-
-export const Cartoons = Styled(VideoLibraryIcon)`
-  ${navStyle}
-`;
-
-export const About = Styled(PermIdentityIcon)`
-  ${navStyle}
-`;
-
-export const Project = Styled(EventNoteIcon)`
-  ${navStyle}
 `;
 
 export const Links = Styled.a`
@@ -90,7 +35,7 @@ export const IconBox = Styled.div`
   &:hover {
     background-color:#e2e2e2;
   }
-  &:hover>${Pocket} {
+  &:hover+${Pocket} {
     opacity: 1;
   }
 `;

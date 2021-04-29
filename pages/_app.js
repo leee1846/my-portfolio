@@ -3,7 +3,7 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import theme from "./../styles/theme";
 import Layout from "./../components/Layout/Layout";
-import Nav from "../components/Nav/Nav";
+import Navbar from "../components/Navbar/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <Head>
           <title>Portfolio</title>
         </Head>
-        <Nav />
+        <Navbar />
         <Layout>
           <Component {...pageProps} />
         </Layout>
