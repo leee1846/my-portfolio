@@ -15,5 +15,5 @@ export default function Home() {
 }
 
 const Tests = Styled.div`
-  color:${({ theme }) => theme.bgGray};
+  font-size:40px;
 `;
