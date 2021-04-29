@@ -24,6 +24,16 @@ const projectData = [
   },
   {
     id: 2,
+    image: portfolio,
+    title: "portfolio",
+    content:
+      '포트폴리오를 React,js로 직접 제작해 보았습니다. "my story", "about me", "project" 섹션으로 나누어 저의 소개를 해보았습니다. SPA을 구현하기 위하여 react-router-dom을 사용하였으며, styled-components로 스타일을 구현하였습니다.',
+    concept: ["React.js", "redux/toolkit", "styled-components"],
+    githubUrl: "https://github.com/leee1846/portfolio-react",
+    githubContent: "github.com/leee1846/portfolio-react",
+  },
+  {
+    id: 3,
     image: todo,
     title: "Technology-specific-todoApp",
     content:
@@ -36,16 +46,6 @@ const projectData = [
     ],
     githubUrl: "https://github.com/leee1846/Technology-specific-todoApp",
     githubContent: "github.com/leee1846/Technology-specific-todoApp",
-  },
-  {
-    id: 3,
-    image: portfolio,
-    title: "portfolio",
-    content:
-      '포트폴리오를 React,js로 직접 제작해 보았습니다. "my story", "about me", "project" 섹션으로 나누어 저의 소개를 해보았습니다. SPA을 구현하기 위하여 react-router-dom을 사용하였으며, styled-components로 스타일을 구현하였습니다.',
-    concept: ["React.js", "redux/toolkit", "styled-components"],
-    githubUrl: "https://github.com/leee1846/portfolio-react",
-    githubContent: "github.com/leee1846/portfolio-react",
   },
   {
     id: 4,
