@@ -8,10 +8,10 @@ import Navbar from "../components/Navbar/Navbar";
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>Portfolio</title>
+      </Head>
       <ThemeProvider theme={theme}>
-        <Head>
-          <title>Portfolio</title>
-        </Head>
         <Navbar />
         <Layout>
           <Component {...pageProps} />

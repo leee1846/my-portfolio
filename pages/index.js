@@ -12,8 +12,3 @@ export default function main() {
 
   return <></>;
 }
-
-const Tests = Styled.div`
-  font-size:40px;
-  color:red;
-`;

@@ -1,7 +1,9 @@
+import About from "../components/About/About";
+
 const about = () => {
   return (
     <div>
-      <p>어바웃</p>
+      <About />
     </div>
   );
 };

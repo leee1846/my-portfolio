@@ -16,7 +16,7 @@ export const NavBox = Styled.div`
   display:flex;
   justify-content:space-between;
   align-items:center;
-  @media (max-width:767px){
+  @media ${({ theme }) => theme.device.tablet}{
     padding:10px 20px;
   }
 `;
@@ -27,7 +27,7 @@ export const Logo = Styled.a`
   font-size:22px;
   color:${({ theme }) => theme.basicFontColor};
   font-weight:500;
-  @media (max-width:767px){
+  @media ${({ theme }) => theme.device.tablet}{
     font-size:18px;
   }
 `;
