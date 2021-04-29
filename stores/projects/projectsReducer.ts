@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export type projectsType = {
   id: number;
@@ -81,5 +81,4 @@ export const projectsReducer = createSlice({
   reducers: {},
 });
 
-export const {} = projectsReducer.actions;
 export default projectsReducer.reducer;

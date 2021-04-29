@@ -10,10 +10,10 @@ import store from "../stores/rootReducer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Portfolio</title>
-      </Head>
       <Provider store={store}>
+        <Head>
+          <title>Portfolio</title>
+        </Head>
         <ThemeProvider theme={theme}>
           <Navbar />
           <Layout>

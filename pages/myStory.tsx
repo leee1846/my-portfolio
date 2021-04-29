@@ -1,8 +1,10 @@
+import MyStories from "../components/MyStories/MyStories";
+
 const myStory = () => {
   return (
-    <div>
-      <p>마이스토리</p>
-    </div>
+    <>
+      <MyStories />
+    </>
   );
 };
 
