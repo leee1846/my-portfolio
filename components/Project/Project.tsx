@@ -1,15 +1,8 @@
 import * as Styled from "./Project.style";
+import { projectsType } from "../../stores/projects/projectsReducer";
 
 type ProjectProps = {
-  project: {
-    id: number;
-    image: string;
-    title: string;
-    content: string;
-    concept: string[];
-    githubUrl: string;
-    githubContent: string;
-  };
+  project: projectsType;
 };
 
 const Project: React.FC<ProjectProps> = ({ project }) => {

@@ -1,30 +1,16 @@
-import Project from "../Project/Project";
-import * as Styled from "./IsProjects.style";
-import { useSelector } from "react-redux";
-import { projectsType } from "../../stores/projects/projectsReducer";
-import { ReducerType } from "../../stores/rootReducer";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const IsProjects = () => {
-  const projects = useSelector<ReducerType, projectsType[]>(
-    (state) => state.projectsReducer
-  );
-
-  return (
-    <Styled.Container>
-      {projects.map((project) => {
-        return (
-          <>
-            <Project project={project} />
-          </>
-        );
-      })}
-    </Styled.Container>
-  );
+export type projectsType = {
+  id: number;
+  image: string;
+  title: string;
+  content: string;
+  concept: string[];
+  githubUrl: string;
+  githubContent: string;
 };
 
-export default IsProjects;
-
-const projectData = [
+const initialState: projectsType[] = [
   {
     id: 1,
     image: "/images/ing.jpg",
@@ -88,3 +74,12 @@ const projectData = [
     githubContent: "velog.io/@kyungjune",
   },
 ];
+
+export const projectsReducer = createSlice({
+  name: "projects",
+  initialState,
+  reducers: {},
+});
+
+export const {} = projectsReducer.actions;
+export default projectsReducer.reducer;
