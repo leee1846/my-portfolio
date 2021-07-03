@@ -4,8 +4,7 @@ export const ContentContainer = Styled.li`
   margin: 0 110px;
   margin-bottom: 70vh;
   max-width: 500px;
-  /* background-color: gray; */
-  background-color: rgba(255, 255, 255, 0.733);
+  background-color: #e3e8ffea;
   padding: 20px 15px;
   border-radius: 10px;
   @media (max-width:767px){
@@ -14,7 +13,8 @@ export const ContentContainer = Styled.li`
 `;
 
 export const Content = Styled.p`
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 0.9rem;
+  /* color:white; */
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2rem;
 `;

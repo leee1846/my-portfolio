@@ -100,7 +100,7 @@ export const Address = Styled.a`
     transition:.4s linear;
   }
   &:hover {
-    color:#929292;
+    color:dodgerblue;
   }
   &:hover:after {
     width:100%;

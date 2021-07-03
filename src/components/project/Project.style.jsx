@@ -52,11 +52,14 @@ export const Content = Styled.p`
 `;
 
 export const Github = Styled.a`
-  font-size:14px;
+  display:inline-block;
+  font-size:16px;
   color:#1d1d1d;
   text-decoration:none;
   border-bottom:.5px solid #1d1d1d;
   position:relative;
+  margin-top:10px;
+  font-weight:bold;
   &:after {
     position:absolute;
     bottom:-1px;
@@ -72,5 +75,6 @@ export const Github = Styled.a`
   }
   &:hover {
     color:#929292;
+    color:dodgerblue;
   }
 `;

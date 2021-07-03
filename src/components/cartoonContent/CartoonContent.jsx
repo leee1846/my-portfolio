@@ -1,11 +1,13 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useEffect, useState } from "react";
 import * as Styled from "./CartoonContent.style";
 import { useDispatch } from "react-redux";
 import { slider } from "../../store/cartoonReducer";
 
 function CartoonContent({ content, index }) {
+  const splittedContent = content.split('+')
   const contentRef = useRef();
-  const boundingRef = useRef();
   const [contentIndex, setContentIndex] = useState(index);
 
   const dispatch = useDispatch();
@@ -15,21 +17,22 @@ function CartoonContent({ content, index }) {
   const throttle = (func, time) => (...args) => {
     if (!timer) {
       timer = setTimeout(() => {
-        timer = null;
         func(...args);
+        timer = null;
       }, time);
     }
   };
 
   const imageScrollHandeler = throttle(() => {
-    boundingRef.current = contentRef.current.getBoundingClientRect();
+    const boundingRect = contentRef.current?.getBoundingClientRect();
     if (
-      boundingRef.current.top < window.innerHeight * 0.5 &&
-      boundingRef.current.top > window.innerHeight * 0.4
+      boundingRect &&
+      boundingRect.top < window.innerHeight * 0.8 &&
+      boundingRect.top > window.innerHeight * 0.1
     ) {
       dispatch(slider({ id: contentIndex + 1 }));
     }
-  }, 0);
+  },400)
 
   useEffect(() => {
     window.addEventListener("scroll", imageScrollHandeler);
@@ -37,11 +40,12 @@ function CartoonContent({ content, index }) {
       window.removeEventListener("scroll", imageScrollHandeler);
     };
   }, []);
-
   return (
     <>
       <Styled.ContentContainer ref={contentRef}>
-        <Styled.Content>{content}</Styled.Content>
+        {
+          splittedContent.map((content,idx) => <Styled.Content key={idx}>{content}</Styled.Content>)
+        }
       </Styled.ContentContainer>
     </>
   );

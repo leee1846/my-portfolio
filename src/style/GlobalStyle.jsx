@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import NanumGothic from "../fonts/Nanum_Gothic/NanumGothic-Regular.ttf";
+import NanumGothic from "../assets/fonts/Nanum_Gothic/NanumGothic-Regular.ttf";
 
 export const GlobalStyle = createGlobalStyle`
 @font-face {
