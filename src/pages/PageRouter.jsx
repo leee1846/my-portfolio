@@ -13,8 +13,8 @@ function PageRouter() {
       <Styled.Container>
         <Switch>
           <Route exact path='/' component={AboutPage} />
-          <Route path='/myStory' component={CartoonPage} />
-          <Route path='/Projects' component={ProjectsPage} />
+          <Route path='/mystory' component={CartoonPage} />
+          <Route path='/projects' component={ProjectsPage} />
         </Switch>
       </Styled.Container>
     </Router>
