@@ -5,7 +5,7 @@ import * as Styled from "./CartoonContent.style";
 import { useDispatch } from "react-redux";
 import { slider } from "../../store/cartoonReducer";
 
-function CartoonContent({ content, index }) {
+function CartoonContent({ content, index,contentShown }) {
   const splittedContent = content.split('+')
   const contentRef = useRef();
   const [contentIndex, setContentIndex] = useState(index);
@@ -27,9 +27,9 @@ function CartoonContent({ content, index }) {
     const boundingRect = contentRef.current?.getBoundingClientRect();
     if (
       boundingRect &&
-      boundingRect.top < window.innerHeight * 0.8 &&
+      boundingRect.top < window.innerHeight * 0.9 &&
       boundingRect.top > window.innerHeight * 0.1
-    ) {
+      ) {
       dispatch(slider({ id: contentIndex + 1 }));
     }
   },400)
@@ -40,9 +40,10 @@ function CartoonContent({ content, index }) {
       window.removeEventListener("scroll", imageScrollHandeler);
     };
   }, []);
+  
   return (
     <>
-      <Styled.ContentContainer ref={contentRef}>
+      <Styled.ContentContainer ref={contentRef} show={contentShown}>
         {
           splittedContent.map((content,idx) => <Styled.Content key={idx}>{content}</Styled.Content>)
         }

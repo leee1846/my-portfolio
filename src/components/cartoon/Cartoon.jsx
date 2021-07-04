@@ -25,7 +25,7 @@ function Cartoon() {
               <CartoonContent
                 key={data.id}
                 content={data.content}
-                displayImage={data.displayImage}
+                contentShown={data.displayImage}
                 cartoonReducer={cartoonReducer}
                 index={index}
               />
