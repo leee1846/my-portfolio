@@ -70,6 +70,8 @@ const projectData = [
 function Project() {
   return (
     <Styled.Container>
+      <Styled.Title>Tech skills</Styled.Title>
+      <Styled.Content>- Javascript, Typescript, React, React-Router, Redux, Redux-thunk, swr, styled-components</Styled.Content>
       {projectData.map((project) => {
         return (
           <Styled.Project key={project.id}>

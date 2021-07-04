@@ -36,18 +36,12 @@ export const Title = Styled.h2`
 `;
 
 export const Content = Styled.p`
-  font-size:15px;
+  font-size:16px;
   width:70%;
   font-weight:100;
   line-height:21px;
-  ul {
-    margin-top:8px;
-    margin-bottom:2px;
-    font-size:14px;
-  }
   @media (max-width:767px){
     width:90%;
-    
   }
 `;
 
