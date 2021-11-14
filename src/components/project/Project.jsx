@@ -5,12 +5,28 @@ import design1 from "../../assets/images/design1.jpg";
 import design2 from "../../assets/images/design2.jpg";
 import portfolio from "../../assets/images/portfolio.jpg";
 import ing from "../../assets/images/ing.jpg";
+import shareIt from "../../assets/images/shareit.JPG";
 
 const projectData = [
   {
     id: 1,
+    image: shareIt,
+    title: "쉐어잇 (2021.08.02 ~ 현재)",
+    content: "대학교의 강의실, 운동장부터 시작해서 그외 다양한 공간을 대여할수있는 플랫폼으로서 성장하고있는 서비스입니다." +
+      " 검색필터, 최근검색어, 레거시 제거, 중복요청 방지등등 프론트엔드 개발을 하고있습니다." ,
+    concept: [
+      "React",
+      "typescript",
+      "redux-saga",
+      "redux",
+      "react-router",
+      "styled-components",
+    ],
+  },
+  {
+    id: 2,
     image: ing,
-    title: "빵덕 (2021.04.01 ~ 진행중)",
+    title: "빵덕 (2021.04.01 ~ 2021.08.01)",
     content: "빵덕서비스는 업체에서 제공하는 장르와 테마가아닌 사용자가 직접 느낀 장르와 테마를 취합하여 제공할수 있도록 노력합니다. 또한 사용자들이 서로 느낀 정보를 공유하고, 본인만의 능력치를 키워나가며 재미를 느낄수 있는 커뮤니티를 서비스 합니다.",
     concept: [
       "React",
@@ -85,9 +101,11 @@ function Project() {
             {project.concept.map((list, idx) => (
               <Styled.Content key={idx}>- {list}</Styled.Content>
             ))}
-            <Styled.Github href={project.githubUrl}>
+            {
+              project.githubUrl && <Styled.Github href={project.githubUrl}>
               자세히 보기
             </Styled.Github>
+            }
           </Styled.Project>
         );
       })}
